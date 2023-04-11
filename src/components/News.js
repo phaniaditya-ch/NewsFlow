@@ -141,15 +141,14 @@ return (
         </div>
         <div>
             <div className="row">
-                {articless.map((element) => {
+                {articless.filter(element => element.urlToImage != null && element.title != null && element.description != null).map((element) => {
                     console.log(articless);
                     let ttitle = element.title !== null ? element.title.slice(0, 45) : "no title";
                     // console.log("ttitle = ", ttitle);
                     let tdesc = element.description != null ? element.description.slice(0, 88) : "- no description -";
-                    if(element.urlToImage != null && element.title != null && element.description != null)
-                    return <div className="col-md-4" key={element.url}>
+                    return (<div className="col-md-4" key={element.url}>
                         <NewsItem title={ttitle} description={tdesc} imgadd={element.urlToImage} newsUrl={element.url} />
-                    </div>
+                    </div>);
                 })}
             </div>
         </div>
