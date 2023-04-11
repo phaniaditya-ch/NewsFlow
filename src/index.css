@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container-fluid {
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.navbar{
+  width: 100%;
+  border: 1px black solid;
+  background-color: rgb(56, 56, 56);
+  
+}
+
+.navbar a{
+  color: white;
+}
+
+.news-heading{
+  margin-top : 4%;
+}
+
+.card-img-top{
+  height : 189.738px;
+  object-fit: cover;
+  object-position: -20% 0;
+}
+
+.buttons-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.newsBtn{
+  margin-bottom: 1%;
+  /* width: 30%; */
+  width: 200px;
+  margin-left: 3%;
+  margin-right: 3%;/**/
+}
+
+.whole-div{
+  text-align: center;
+}
